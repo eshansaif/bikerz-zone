@@ -4,13 +4,375 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Bikerz Zone</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- FOnt awesome -->
+    <script src="https://kit.fontawesome.com/8bb2f94bc1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
+    <header class="container-lg">
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#">Bikerz <span class="text-danger">Zone</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#bike">Bikes</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#clients_section">Our Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq">FAQ</a>
+                        </li>
+                    </ul>
+
+
+                    <button class="ms-lg-5 ms-md-5 ms-0 ms-sm-0 btn btn-outline-success" type="submit">Login</button>
+
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Banner Slider -->
+
+        <!-- 1. Simple -->
+        <div id="carouselExample" class="carousel slide bg-danger p-5 bg-opacity-10">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row g-2">
+                        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                            <div class="">
+                                <h1>Ride-on R15 V4 with Smile</h1>
+                                <p>Amet minim mollit non deserunt ullamco
+                                    est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                                </p>
+                                <button class="btn btn-danger">Purchase</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img src="images/bike-1.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row g-2 d-flex flex-row-reverse">
+                        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                            <div class="">
+                                <h1>Ride-on R15 V4 with Smile</h1>
+                                <p>Amet minim mollit non deserunt ullamco
+                                    est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                                </p>
+                                <button class="btn btn-danger">Purchase</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img src="images/bike-2.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row g-2">
+                        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                            <div class="">
+                                <h1>Ride-on R15 V4 with Smile</h1>
+                                <p>Amet minim mollit non deserunt ullamco
+                                    est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                                </p>
+                                <button class="btn btn-danger">Purchase</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img src="images/bike-3.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bz-red-icon" aria-hidden="true"></span>
+                <span class="visually-hidden ">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon bz-red-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </header>
+    <main class="container-lg">
+
+        <!-- Hot bike section -->
+        <section id="bike" class="text-center text-md-center mt-5">
+            <h1>Featured Bikes In <span class="text-danger">This Year</span></h1>
+            <p class="text-danger ">Best bike collection</p>
+            <hr class="border border-danger border-2 opacity-50 w-50 mx-auto">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5 mt-4 px-5">
+                <div class="col"><img class="img-fluid grayscale-img" src="images/feature-bike.jpg" alt=""></div>
+                <div class="col"><img class="img-fluid w-75" src="images/feature-bike.jpg" alt=""></div>
+                <div class="col"><img class="img-fluid grayscale-img" src="images/feature-bike.jpg" alt=""></div>
+            </div>
+
+        </section>
+
+        <!-- latest bike section -->
+
+        <section class="mt-5 p-5 bg-info bg-opacity-25 rounded">
+            <h1 class="text-center mb-3">Latest <span class="text-danger">Bikes</span></h1>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3  g-4">
+                <div class="col">
+                    <div class="card h-100 rounded-4">
+                        <img src="images/bike-1.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ducati XDIAVEL S-73</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer bg-white border-top-0">
+                            <button type="button" class="btn btn-outline-danger">Purchase</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 rounded-4">
+                        <img src="images/bike-2.png" class="card-img-top img-fluid w-100" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Motorcycles & Scooters</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.</p>
+                        </div>
+                        <div class="card-footer bg-white border-top-0">
+                            <button type="button" class="btn btn-outline-danger">Purchase</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 rounded-4">
+                        <img src="images/bike-3.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">2021 Honda CBR500R</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This card has even longer content than the first to show that equal
+                                height action.</p>
+                        </div>
+                        <div class="card-footer bg-white border-top-0">
+                            <button type="button" class="btn btn-outline-danger">Purchase</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Happy clients section -->
+        <section id="clients_section" class="mt-5">
+            <h1 class="text-center mb-3">Happy <span class="text-danger">Client Says</span></h1>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 text-center">
+                <div class="col">
+                    <div class="card h-100 pt-4">
+                        <img src="images/user-1.png" class="card-img-top w-50 mx-auto" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+
+                            </p>
+                            <h5 class="card-title text-primary">Regina Miles</h5>
+                            <p class="fw-bold">Banker</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 pt-4">
+                        <img src="images/user-2.png" class="card-img-top w-50 mx-auto" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">This is a short card.</p>
+                        </div>
+                        <p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <h5 class="card-title text-primary">Regina Miles</h5>
+                        <p class="fw-bold">Banker</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 pt-4">
+                        <img src="images/user-3.png" class="card-img-top w-50 mx-auto" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content.</p>
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+
+                            </p>
+                            <h5 class="card-title text-primary">Regina Miles</h5>
+                            <p class="fw-bold">Banker</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Frequently Asked Questions -->
+        <section id="faq" class="mt-5">
+            <h1 class="text-center mb-4">Frequently <span class="text-danger">Asked Questions</span></h1>
+
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 g-3">
+                <div class="col-12 col-sm-12 col-md-5 d-flex justify-content-center ">
+                    <img class="img-fluid w-50 mx-auto" src="images/faq.png" alt="">
+                </div>
+                <div class="accordion col-12 col-sm-12 col-md-7" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                What are the most important things I should
+                                know about riding a bike?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                            aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and
+                                laws.
+                                Get in the mindset of “driving” your bike—not just “riding” your bike. This will help
+                                you be
+                                a more focused and legally compliant bike rider.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button fw-semibold collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                                aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                How can I tell if my helmet is old and I need a
+                                new one?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These
+                                classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables.
+                                It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button fw-semibold collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                                aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                My bike has been in storage is it safe to ride?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the
+                                collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables.
+                                It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button fw-semibold collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour"
+                                aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                What rules should I follow when riding my bike?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the
+                                collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables.
+                                It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+
+    <footer class="container-fluid bg-black mt-5 text-white p-5">
+        <section class="container-lg">
+            <div class="row d-flex justify-content-between g-5">
+                <div class="col order-2 order-sm-2 order-md-1 ">
+                    <p>
+                        <span class="me-3">Download Now</span><span>License</span>
+                    </p>
+                    <p>
+                        <span class="me-3">About</span><span class="me-3">Features</span><span
+                            class="me-3">Pricing</span><span class="me-3">Careers</span><span
+                            class="me-3">Help</span><span class="me-3">Privacy
+                            Policy</span>
+                    </p>
+                    <p class="text-center text-sm-center text-md-start">
+                        © 2020 bike. All rights reserved
+                    </p>
+                </div>
+                <div class="col row-cols-1 text-center order-1 order-sm-1 order-md-2">
+                    <p>Get the App</p>
+                    <div><img class="img-fluid footer-img mb-3" src="images/android.png" alt=""></div>
+                    <div><img class="img-fluid footer-img mb-3" src="images/ios.png" alt=""></div>
+                </div>
+            </div>
+        </section>
+    </footer>
 
 
     <!-- BS JS -->

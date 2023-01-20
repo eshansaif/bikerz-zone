@@ -1,0 +1,21 @@
+.bz-red-icon {
+    background-color: rgba(252, 4, 4, 0.153);
+}
+
+.grayscale-img {
+    filter: grayscale(100%);
+}
+
+.fa-solid.fa-star,
+.fa-star-half-stroke {
+    color: #E77C40;
+    ;
+}
+
+.footer-img {
+    width: 135px;
+}
+
+.navbar-collapse {
+    text-align: center;
+}
